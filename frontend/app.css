@@ -1,0 +1,236 @@
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #18243a;
+  background: #f4f7fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.topbar {
+  min-height: 76px;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 21px;
+  font-weight: 750;
+  color: #142b50;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #173e76;
+  color: #fff;
+  font-size: 21px;
+}
+
+.topbar-label,
+.eyebrow {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.8px;
+}
+
+.topbar-label {
+  color: #64748b;
+}
+
+.hero {
+  padding: 70px 20px 54px;
+  text-align: center;
+  background: linear-gradient(140deg, #102d56, #205d91);
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #4384c7;
+}
+
+.hero .eyebrow {
+  color: #b9dcff;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: #a9d5ff;
+}
+
+.hero-description {
+  max-width: 570px;
+  margin: 22px auto 0;
+  color: #e0ebf8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.workspace {
+  width: min(680px, calc(100% - 32px));
+  margin: -12px auto 48px;
+  position: relative;
+  padding: 32px;
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 18px;
+  box-shadow: 0 16px 45px rgba(20, 43, 80, 0.09);
+}
+
+.workspace h2 {
+  margin: 0 0 26px;
+  font-size: 27px;
+  color: #172b49;
+}
+
+.workspace form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.workspace label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #263b57;
+}
+
+.workspace select,
+.workspace textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d5deea;
+  border-radius: 9px;
+  outline: none;
+  color: #243650;
+  background: #fff;
+}
+
+.workspace select:focus,
+.workspace textarea:focus {
+  border-color: #397cc0;
+  box-shadow: 0 0 0 3px rgba(57, 124, 192, 0.12);
+}
+
+.workspace textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.7;
+}
+
+.character-count {
+  margin: 0;
+  color: #75849a;
+  font-size: 12px;
+  text-align: right;
+}
+
+.workspace button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 9px;
+  background: #17477f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.workspace button:hover {
+  background: #10345f;
+}
+
+.notice {
+  margin: 20px 0 0;
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #f0f5fb;
+  color: #435b78;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 0 20px 28px;
+  text-align: center;
+  color: #66758a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 15px 18px;
+  }
+
+  .topbar-label {
+    max-width: 120px;
+    text-align: right;
+    line-height: 1.5;
+    font-size: 9px;
+  }
+
+  .hero {
+    padding: 52px 18px 45px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .workspace {
+    padding: 23px 19px;
+  }
+}
